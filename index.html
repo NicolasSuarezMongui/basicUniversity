@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/imgs/logo.png">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Monsters University</title>
+</head>
+<body>
+    <div class="titulo">
+        <img class="imagen-logo" src="./assets/imgs/logo.png" alt="LOGO">        
+        <h1>Monster University</h1>        
+    </div>
+
+    <div class="modal_course">
+
+        <div class="form_course">
+            <label for="">
+                Codigo:
+                <input type="text" name="" id="codeCourse">
+            </label>
+            <label for="">
+                Nombre:
+                <input type="text" name="" id="nameCourse">
+            </label>
+            <label for="">
+                Especialidad: 
+                <input type="text" name="" id="specialtyCourse">
+            </label>
+            <label for="">
+                Creditos: 
+                <input type="text" name="" id="creditsCourse">
+            </label>
+            <label for="">
+                Duracion:
+                <input type="text" name="" id="durationCourse">
+            </label>
+            <button class="save_course">Guardar</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="name_career"><h1>CARRERA: <span class="career"></span></h1></div>
+        <div class="info_course">
+            <label for="">Nombre del curso: <input type="text" name="" id="infoName" disabled></label>
+            <label for="">Especialidad: <input type="text" name="" id="infoSpecialty" disabled></label>
+            <label for="">Duración del Curso: <input type="text" name="" id="infoDuration" disabled></label>
+            <label for="">Créditos Académicos: <input type="text" name="" id="infoCredits" disabled></label>
+        </div>
+        
+        <div class="btns_actions">
+            <button class="addStudent">Añadir Estudiante</button>
+            <button class="delStudent">Eliminar Estudiante</button>
+            <button>Modificar Estudiante</button>
+        </div>
+        
+        <div class="schedule">
+            <table>
+                <caption>HORARIO</caption>
+                <thead>
+                    <tr>
+                        <th id="student">Nombre del estudiante</th>
+                        <th id="monday">Lunes</th>
+                        <th id="tuesday">Martes</th>
+                        <th id="wednesday">Miercoles</th>
+                        <th id="thursday">Jueves</th>
+                        <th id="friday">Viernes</th>
+                        <th id="saturday">Sabado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="modal_schedule">
+        <div class="form_schedule">
+            <span id="day_schedule"></span>
+            <label for=""><span id="scheduleInitial">Hora Inicio:</span><input type="time" name="" id="initialHour"></label>
+            <label for=""><span id="scheduleFinal">Hora Fin:</span><input type="time" name="" id="finalHour"></label>
+            <button class="save_schedule">Guardar</button>
+            <button class="cancel_schedule">Cancelar</button>
+        </div>
+    </div>
+    <div class="modal_new_student">
+        <div class="form_student">
+            <label for="">Codigo: <input type="text" name="" id="codeStudent"></label>
+            <label for="">Nombre: <input type="text" name="" id="nameStudent"></label>
+            <label for="">Carrera: <input type="text" name="" id="careerStudent"></label>
+            <button class="save_student">Añadir</button>
+            <button class="cancel_student">Cancelar</button>
+        </div>
+    </div>
+    <div class="modal_delete_student">
+        <div class="form_delete_student">
+            <label for="">Codigo: <input type="text" name="" id="codeDelStudent"></label>
+            <button class="delete_student">Eliminar</button>
+            <button class="cancel_delete_student">Cancelar</button>
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
